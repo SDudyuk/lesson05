@@ -62,7 +62,7 @@ try {
     throw 'Число 2 не коректне!';
   }
   
-  console.log(`Task 3\nfindGCD(${numberOne}, ${numberTwo}): ${findGCD(numberOne, numberTwo)}`);
+  console.log(`Task 3\nfindGCD(${numberOne}, ${numberTwo}): ${findGCD(parsedNumberOne, parsedNumberTwo)}`);
 
 } catch (e) {
   console.error(e);
