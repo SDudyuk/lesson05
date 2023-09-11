@@ -8,14 +8,14 @@ function reverseString(str) {
   return reverseString;
 }
 
-//функція перевірки чи символ літера (лише для літер верхній та нижній регістр не рівні):
-const isLetter = (char) => char.toLowerCase() !== char.toUpperCase();
-
 function isPalindrome(str) {
   let parsedString = '';
 
   //так як регістр для поліндрома неважливий, приведемо в один регістр
   str = str.toLowerCase();
+
+  //функція перевірки чи символ літера (лише для літер верхній та нижній регістр не рівні):
+  const isLetter = (char) => char.toLowerCase() !== char.toUpperCase();
 
   //з вхідного рядка викидуємо всі символи окрім літер
   for (let i=0; i<str.length; i++) {
